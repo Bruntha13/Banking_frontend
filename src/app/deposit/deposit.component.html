@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<body>
+  <div class="container" id="container" style="font-family: times 'Times New Roman', Times, serif;">
+    <div class="loginform">
+    <form (ngSubmit)= "onSubmit()">
+  <div class="main_div">
+    <img src="assets/2.jpg" width="80%" style="padding-left: 50px;"><br>
+    <div class="title">Peoples Bank</div>
+
+
+
+      <div class="input_box">
+        <input type="text" name="accno" class="form-control"placeholder="Enter Your Account Number"
+        [(ngModel)]= "deposit.accno">
+          <div class="icon"><i class="fa-solid fa-landmark"></i></div>
+      </div>
+
+      <div class="input_box">
+        <input
+          type="number"
+          name="amount"
+          id="amount"
+          class="form-control"
+          placeholder="Enter amount to be deposited"
+          [(ngModel)]="deposit.amount"
+          
+        />
+        <div class="icon"><i class="fa-solid fa-sack-dollar"></i></div>
+      </div>
+
+      <div class="input_box">
+        <input type="date" name="date" class="form-control"placeholder="Enter date"
+        [(ngModel)]= "deposit.date">
+          <div class="icon"><i class="fa-solid fa-calendar-days"></i></div>
+      </div>
+
+       <div class="input_box button">
+        <button class="button1" type="submit">Deposit</button>
+      </div>
+
+      <i class="fa-solid fa-circle-arrow-left fa-xl"  (click)="back()"></i>
+      <span style=" font-size: large;">Back</span>
+
+  </div>
+    </form>
+
+  </div>
+  </div>
+</body>

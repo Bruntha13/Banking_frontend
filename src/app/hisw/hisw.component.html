@@ -1,0 +1,55 @@
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<body>
+  <div class="container" id="container" style="font-family: times 'Times New Roman', Times, serif;">
+    <div class="loginform">
+
+  <div class="overlay-container">
+    <div class="overlay">
+      <div class="overlay-panel overlay-right">
+        <!-- <img src="assets/2.jpg" width="80%" style="padding-left: 50px;"><br> -->
+        <h4 class="mb-4" style="justify-content: center;font-family: 'Sriracha', cursive;">
+          Withdrawal History
+        </h4>
+
+        <div class="table">
+            <table>
+            <thead>
+                <tr>
+                    <th>Withdrawal ID</th>
+                    <th>Account No</th>
+                    <th>Amount</th>
+                    <th>date</th>
+                </tr>
+            </thead>
+            <tbody>
+        <tr *ngFor="let withdrawone of withdraw">
+            <td>{{withdrawone.withdrawalid}}</td>
+            <td>{{withdrawone.accno}}</td>
+            <td>{{withdrawone.amount}}</td>
+            <td>{{withdrawone.date}}</td>
+        </tr>
+        </tbody>
+        </table>
+        <div class="back">
+            <i class="fa-solid fa-circle-arrow-left fa-xl"  (click)="back()"></i>
+      <span style=" font-size: large;">Back</span>
+        </div>
+        
+        </div>
+
+      </div>
+    </div>
+    
+  </div>
+  </div>
+  </div>
+  
+
+</body>
+

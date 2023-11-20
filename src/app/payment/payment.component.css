@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+*{
+
+  box-sizing: border-box;
+  border-radius: 4vh;
+  top: 0;
+  font-family: 'Sriracha', cursive;
+}
+body{
+    background: linear-gradient(to right, #ee7824aa,    #d83639a7, #dd3676a9, #b44593a7);
+  display: flex;
+	/* justify-content: center; */
+	align-items: center;
+	flex-direction: column;
+  font-family: 'Sriracha', cursive;
+	height: 135vh;
+	/* margin: 10px 0 50px; */
+
+
+}
+
+.container {
+	position: relative;
+	width: 800px;
+	height: 90vh;
+}
+.main_div{
+  width: 500px;
+  background: #fff;
+  padding: 40px;
+  margin-left: 150px;
+  border-radius: 4vh;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+.main_div .title{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+form {
+  margin-top: 15px;
+}
+form .input_box{
+  height: 50px;
+  width: 100%;
+  position: relative;
+  margin-top: 25px;
+}
+.input_box input{
+  height: 80%;
+  width: 100%;
+  border: none;
+  background-color: rgb(232, 243, 250);
+  border-radius: none;
+  padding-left: 45px;
+  font-size: 16px;
+}
+
+.input_box .icon{
+  position: absolute;
+  top: 40%;
+  left: 20px;
+  transform: translateY(-50%);
+  color:black;
+}
+form .option_div{
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.option_div .check_box{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.option_div .forget_div{
+  margin-top: 10px;
+
+}
+
+.option_div span{
+  margin-left: 5px;
+  font-size: 16px;
+  color: #0f0101;
+}
+.option_div .forget_div a{
+  font-size: 16px;
+  color: #060506;
+
+
+}
+.button1{
+  margin-left: 55px;
+  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  /*background: #0f0101;*/
+  color: #fff;
+  border: none;
+  width: 300px;
+  height: 40px;
+  border-radius: 4vh;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s linear;
+
+}
+.button1:hover{
+  background: linear-gradient(to left, #ee7724, #d8363a, #dd3675, #b44593);
+}
+form .sign_up{
+  text-align: center;
+  margin-top: 15px;
+}
+.sign_up .btn-outline-danger{
+  width: 80px;
+  height: 40px;
+}
+form a{
+  text-decoration: none;
+  color: black;
+}
+form a:hover{
+  text-decoration: underline;
+  color: red;
+}
+.form-control{
+  border-color: red;
+}
+
+
+/* Right side part */
+
+
+.overlay-container {
+	position: absolute;
+	top: 25px;
+	left: 50%;
+	width: 60%;
+	height: 110%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.overlay-container .overlay {
+	background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+	background-position: 0 40px;
+	color: #FFFFFF;
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.overlay-panel {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0px 40px;
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
+
+.overlay-right {
+	right: 0;
+}
+
+

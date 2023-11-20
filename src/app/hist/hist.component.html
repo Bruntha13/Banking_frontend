@@ -1,0 +1,59 @@
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<body>
+  <div class="container" id="container" style="font-family: times 'Times New Roman', Times, serif;">
+    <div class="loginform">
+
+  <div class="overlay-container">
+    <div class="overlay">
+      <div class="overlay-panel overlay-right">
+        <!-- <img src="assets/2.jpg" width="80%" style="padding-left: 50px;"><br> -->
+        <h4 class="mb-4" style="justify-content: center;font-family: 'Sriracha', cursive;">
+          Payment History
+        </h4>
+
+        <div class="table">
+            <table>
+            <thead>
+                <tr>
+                    <th>Payment ID</th>
+                    <th>Benefactor Name</th>
+                    <th>Benefactor Account Number</th>
+                    <th>Account No</th>
+                    <th>Amount</th>
+                    <th>date</th>
+                </tr>
+            </thead>
+            <tbody>
+        <tr *ngFor="let paymentone of payment">
+            <td>{{paymentone.pymntid}}</td>
+            <td>{{paymentone.benfName}}</td>
+            <td>{{paymentone.benfaccountNumber}}</td>
+            <td>{{paymentone.accno}}</td>
+            <td>{{paymentone.amount}}</td>
+            <td>{{paymentone.date}}</td>
+        </tr>
+        </tbody>
+        </table>
+        <div class="back">
+            <i class="fa-solid fa-circle-arrow-left fa-xl"  (click)="back()"></i>
+      <span style=" font-size: large;">Back</span>
+        </div>
+        
+        </div>
+
+      </div>
+    </div>
+    
+  </div>
+  </div>
+  </div>
+  
+
+</body>
+

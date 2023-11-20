@@ -1,0 +1,170 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"/>
+
+<body>
+  <div
+    class="container"
+    id="container"
+    style="font-family: times 'Times New Roman', Times, serif">
+    <div class="registerForm">
+
+        <form (ngSubmit)= "onSubmit()">
+        <div class="main_div">
+          <img
+            src="assets/2.jpg"
+            width="80%"
+            style="padding-left: 50px"
+          /><br />
+
+          <div class="title">Peoples Bank</div>
+
+          <!------------------------------------------------------------------------------------------>
+
+          <!-------------------------------------USERNAME--------------------------------------------->
+
+          <div class="input_box">
+            <input
+              type="text"
+              id="username"
+              class="form-control"
+              placeholder="Enter Your User Name"
+              [(ngModel)]="user.username"
+              name="username"
+            />
+            <div class="icon"><i class="fa-solid fa-user"></i></div>
+          </div>
+
+            <!--Account number-->
+
+            <div class="input_box">
+                <input
+                  type="text"
+                  name="accno"
+                  id="accno"
+                  class="form-control"
+                  placeholder="Enter Your Account Number"
+                  [(ngModel)]="user.accno"
+                 />
+                 <div class="icon"><i class="fa-solid fa-landmark"></i></div>
+              </div>
+
+          <!--Email-->
+
+          <div class="input_box">
+            <input
+              type="text"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter Your Email Id"
+              [(ngModel)]="user.email"
+              />
+
+            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+          </div> 
+
+          <!--Contact Number-->
+
+          <div class="input_box">
+            <input
+              type="number"
+              name="contactno"
+              id="contactno"
+              class="form-control"
+              placeholder="Enter Your Contact Number"
+              [(ngModel)]="user.contactno"
+              />
+            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+          </div> 
+
+        
+
+          <!--BALANCE-->
+
+          <div class="input_box">
+            <input
+              type="balance"
+              name="balance"
+              id="balance"
+              class="form-control"
+              placeholder="Current balance:00.00"
+              [(ngModel)]="user.balance"
+              
+            />
+            <div class="icon"><i class="fa-solid fa-sack-dollar"></i></div>
+          </div>
+
+          <!--LOGIN PIN-->
+
+          <div class="input_box">
+            <input
+              type="password"
+              name="loginpin"
+              id="loginpin"
+              class="form-control"
+              placeholder="Enter Your PIN"
+              [(ngModel)]="user.loginpin"
+              />
+            <div class="icon"><i class="fa-solid fa-key"></i></div>
+          </div>
+
+         
+
+          <div class="option_div">
+            <div class="check_box">
+              <input type="checkbox" />
+              <span>Remember me</span>
+            </div>
+          </div>
+
+          <div class="input_box button">
+            <button class="button1" type="submit">Register</button>
+          </div>
+
+          <div class="sign_up">
+            <p>Existing user?</p>
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              routerLink="/login"
+            >
+              Login
+            </button>
+          </div>
+
+          <i routerLink="/" class="fa-solid fa-circle-arrow-left fa-xl"></i>
+          <span style="font-size: large">Back</span>
+        </div>
+      </form>
+
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-right">
+            <h4
+              class="mb-4"
+              style="justify-content: center; font-family: 'Sriracha', cursive">
+              We are more than just a Bank
+            </h4>
+            <p
+              class="small mb-0"
+              style="justify-content: center"
+              style="align-items: center">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <img
+              src="assets/kan.svg.svg"
+              style="width: 400px; padding-right: 0; padding-top: 60px"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

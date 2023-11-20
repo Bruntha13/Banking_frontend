@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+
+*{
+  box-sizing: border-box;
+  font-family: 'Sriracha', cursive;
+}
+.main-page-header{
+  padding:10px 0px;
+  background: linear-gradient(to left, #ee7724, #d8363a, #dd3675, #b44593);
+}
+.main-page-header .company-name{
+  color: white;
+}
+.container{
+  margin:10px auto;
+
+}
+.container1{
+  margin:10px auto;
+  border-radius: 10px;
+  width:85%;
+
+}
+
+.navigation{
+  margin-left: 20px;
+}
+.navigation li{
+  display:inline-block;
+  list-style-type: none;
+  margin:0px 15px
+}
+.navigation li a{
+  color: white;
+  text-decoration: none;
+}
+.display-name i{
+  padding: 5px;
+}
+#transact-btn{
+  background: none;
+  border: #dd3675 2px solid;
+  color: #dd3675;
+  width: 350px;
+}
+#transact-btn:hover{
+  background: linear-gradient(to left, #ee7724, #d8363a, #dd3675, #b44593);
+  border: 2px solid #fffeff;
+  color: #fbf7fa;
+}
+#add-account-btn{
+  background: none;
+  border: 2px solid #dd3675;
+  color: #dd3675;
+}
+#add-account-btn:hover{
+  background: linear-gradient(to left, #ee7724, #d8363a, #dd3675, #b44593);
+  border: transparent;
+  color: #fbfbfb;
+}
+.offcanvas{
+  background: linear-gradient(to left, #ee7724, #d8363a, #dd3675, #b44593);
+}
+#transact-btn2{
+  background: linear-gradient(to left, #ee7724, #d8363a, #dd3675, #b44593);
+  color: white;
+  width: 100px;
+}
+#transact-btn2:hover{
+  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  color: white;
+}
+
+#transact-btn3{
+  background: linear-gradient(to left, #ee7724, #d8363a, #dd3675, #b44593);
+  color: white;
+  width: 150px;
+}
+#transact-btn3:hover{
+  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  color: white;
+}
+.container .me-auto{
+  background-color: #fbfbfb;
+  border: none;
+}
+
+/* .container1 .card-body{
+  background: linear-gradient(to right, #d19c76, #cf8687, #c97a98, #ac6a98);
+
+} */
+
+
+/**********************************HISTORY*********************************8/
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  border-radius: 20px;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #c098af;
+  border-radius: 10px;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color:transparent;}
+
+
+
+.achievements {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 80px;
+}
+
+.achievements .work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.achievements .work i {
+  width: fit-content;
+  font-size: 70px;
+  color: white;
+  background: linear-gradient(to left, #ee7724, #d8363a, #dd3675, #b44593);
+  border-radius: 50%;
+  border: 2px solid #333333;
+  padding: 2px;
+
+}
+
+
+.achievements .work .work-heading {
+  font-size: 20px;
+  color: #333333;
+  font-family: 'Sriracha', cursive;
+  margin: 10px 0;
+}
+
+.achievements .work .work-text {
+  font-size: 15px;
+  color: #585858;
+  font-family: 'Sriracha', cursive;
+  margin: 5px 0;
+}
+
+
+
+/* CSS for footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Sriracha', cursive;
+  align-items: center;
+  background: linear-gradient(to left, #ee7724, #d8363a, #dd3675, #b44593);
+  padding: 10px 10px;
+  height: 25vh;
+  margin-bottom: 0;
+  /* margin-top: 0vh; */
+}
+
+.footer .copy {
+  color: #fff;
+  font-size: large;
+}
+
+.bottom-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.bottom-links .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.bottom-links .links span {
+  font-size: 18px;
+  color: #a19090;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.bottom-links .links a {
+  text-decoration: none;
+  color: #a39090;
+  padding: 10px 20px;
+  font-size: large;
+}
+.bottom-links .links a:hover {
+  color: rgb(254, 253, 253);
+}
+
+.buttons{
+  margin-left: 60px;
+}
+.buttons button{
+  margin-right: 20px;
+  border-radius: 10px;
+  height: 8vh;
+  background: none;
+  border: #dd3675 2px solid;
+  color: #dd3675;
+  width: 350px;
+}
+
+.balance{
+  margin-left: 500px;
+  margin-top: 50px;
+}
+.balance div{
+  font-size: 25px;
+  text-shadow: 5px 8px 8px #dd3675;
+}
+.balance div:hover{
+  font-size: 28px;
+  color: #dd3675;
+  text-shadow: none;
+  
+}
+.buttons button:hover{
+  background: linear-gradient(to left, #ee7724, #d8363a, #dd3675, #b44593);
+  border: 2px solid #fffeff;
+  color: #fbf7fa;
+}
+
